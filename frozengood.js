@@ -18,7 +18,7 @@ function isGreenZone(x, y) {
 function inPolygon(x, y, xp, yp) {
    const npol = xp.length;
    let j = npol - 1;
-   let c = 0;
+   let c = false;
 
    for (var i = 0; i < npol; i++) {
       if (
@@ -27,7 +27,7 @@ function inPolygon(x, y, xp, yp) {
       ) {
          c = !c;
       }
-  
+
       j = i;
    }
 
